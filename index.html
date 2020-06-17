@@ -15,10 +15,12 @@
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 		<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
     <!-- Compiled and minified JavaScript -->
 	</head>
 	
-	<body class = "snow_again" style = "display: flex;min-height: 100vh;flex-direction: column;">
+	<body class = "snow_again" style = "display: flex;min-height: 100vh;flex-direction: column;font-family: 'Comfortaa', cursive;">
 		<header>
 			<div class="navbar-fixed">
 			<nav class="nav-extended grown_early z-density-1" style ="padding:5px;">
@@ -58,7 +60,7 @@
 		<main class = "container">
 			<!-- <div id = "services" class = "center section scrollspy"> 
 				<br>
-					<h4 class = "center"><b>Services</b></h4><br> 
+					<h4 class = "center grey-text text-darken-3"><b>Our Services</b></h4><br> 
 					<div class="slider" style = "height:400px;">
 						<ul class="slides z-depth-3 grown_early " style ="border-radius:10px;opacity:0.9;">
 							<li>	
@@ -74,14 +76,14 @@
 			
 			<div id = "products" class = "center section scrollspy row"> 
 				<br>
-					<h4 class = "center"><b>Products</b></h4><br>
+					<h4 class = "center grey-text text-darken-3"><b>Our Products</b></h4><br>
 					<!-- Product 1  -->
-					<div class = "col s12" style = "display: flex;align-items: center;justify-content: center;">
-						<div class="card sticky-action grown_early z-depth-3 grey-text text-lighten-3" style = "border-radius:10px;max-width:400;">
+					<div class = "col s12 grey-text text-lighten-3" style = "display: flex;align-items: center;justify-content: center;">
+						<div class="card sticky-action grown_early z-depth-3" style = "border-radius:10px;max-width:400;">
 							<div class="card-image waves-effect waves-block waves-light" style = "background: black;">
 								<img class="activator" style = "opacity:0.9;" src="img/P1.png" width="300px" height="250px">
 							</div>
-							<div class="card-reveal grown_early" style = "overflow:hidden;">
+							<div class="card-reveal grown_early" style = "overflow:hidden;font-family: 'Open Sans', sans-serif;">
 								<span class="card-title"><i class="material-icons right">close</i><br><small>Kairali Hand Sanitizer provides a convenient and effective way to clean your hands when soap and water are not available.</small></span>
 							</div>
 							<div class="card-action grown_early" style = "border-radius:10px;">
@@ -97,7 +99,7 @@
 								<tbody>
 									<tr> 
 										<th>Event Information:</th>
-										<td style = "padding: 10px;">{{eve.event_description|safe}}</td>
+										<td style = "padding: 10px;font-family: 'Open Sans', sans-serif;">{{eve.event_description|safe}}</td>
 									</tr>
 								</tbody>
 							</table>
@@ -108,72 +110,6 @@
 					</div>
 					
 					<!-- Product 2  -->
-					
-					<div class = "col s12" style = "display: flex;align-items: center;justify-content: center;">
-						<div class="card sticky-action grown_early z-depth-3 grey-text text-lighten-3" style = "border-radius:10px;max-width:400;">
-							<div class="card-image waves-effect waves-block waves-light" style = "background: black;">
-								<img class="activator" style = "opacity:0.9;" src="img/P2.png" width="300px" height="250px">
-							</div>
-							<div class="card-reveal grown_early" style = "overflow:hidden;">
-								<span class="card-title"><i class="material-icons right">close</i><br><small>Kairali Hand Sanitizer provides a convenient and effective way to clean your hands when soap and water are not available.</small></span>
-							</div>
-							<div class="card-action grown_early" style = "border-radius:10px;">
-									<span class="card-title activator grey-text text-lighten-3"><b>Kairali Handsanitizer</b><br></span>
-								<a class="waves-effect btn-flat modal-trigger" href = "#modal2">More Info</a>
-							</div>
-						</div>
-					</div>			
-					<div id="modal2" class="modal modal-fixed-footer black" tabindex="0" style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(0.8) scaleY(0.8);border-radius:10px;">
-						<div class="modal-content snow_again" style = "opacity:0.8;">
-							<h4 class = "center" >Kairali Handsanitizer</h4>
-							<table style = " border-spacing: 10px;border-collapse: separate;">
-								<tbody>
-									<tr> 
-										<th>Event Information:</th>
-										<td style = "padding: 10px;">{{eve.event_description|safe}}</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="modal-footer snow_again" style = "opacity:0.8;">
-							<a class="modal-close waves-effect waves-green btn-flat"><b>Close</b></a>
-						</div>
-					</div>
-					
-					<!-- Product 3  -->
-					
-					<div class = "col s12" style = "display: flex;align-items: center;justify-content: center;">
-						<div class="card sticky-action grown_early z-depth-3 grey-text text-lighten-3" style = "border-radius:10px;max-width:400;">
-							<div class="card-image waves-effect waves-block waves-light" style = "background: black;">
-								<img class="activator" style = "opacity:0.9;" src="img/P2.png" width="300px" height="250px">
-							</div>
-							<div class="card-reveal grown_early" style = "overflow:hidden;">
-								<span class="card-title"><i class="material-icons right">close</i><br><small>Kairali Hand Sanitizer provides a convenient and effective way to clean your hands when soap and water are not available.</small></span>
-							</div>
-							<div class="card-action grown_early" style = "border-radius:10px;">
-									<span class="card-title activator grey-text text-lighten-3"><b>Kairali Handsanitizer</b><br></span>
-								<a class="waves-effect btn-flat modal-trigger" href = "#modal3">More Info</a>
-							</div>
-						</div>
-					</div>			
-					<div id="modal3" class="modal modal-fixed-footer black" tabindex="0" style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(0.8) scaleY(0.8);border-radius:10px;">
-						<div class="modal-content snow_again" style = "opacity:0.8;">
-							<h4 class = "center" >Kairali Handsanitizer</h4>
-							<table style = " border-spacing: 10px;border-collapse: separate;">
-								<tbody>
-									<tr> 
-										<th>Event Information:</th>
-										<td style = "padding: 10px;">{{eve.event_description|safe}}</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="modal-footer snow_again" style = "opacity:0.8;">
-							<a class="modal-close waves-effect waves-green btn-flat"><b>Close</b></a>
-						</div>
-					</div>
-				<br>
-			</div>
 		</main>
 	
 		<footer id="contactus" class="page-footer section scrollspy grown_early z-density-3" style ="padding:5px;">
