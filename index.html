@@ -67,7 +67,7 @@
 									<h3>Import And Export Licensing</h3>
 								</div>	
 							</li>
-						</ul>
+						</ul>	
 					</div>
 				<br>
 			</div> -->
@@ -75,7 +75,8 @@
 			<div id = "products" class = "center section scrollspy row"> 
 				<br>
 					<h4 class = "center"><b>Products</b></h4><br>
-					<div class = "col s12">
+					<!-- Product 1  -->
+					<div class = "col s12" style = "display: flex;align-items: center;justify-content: center;">
 						<div class="card sticky-action grown_early z-depth-3 grey-text text-lighten-3" style = "border-radius:10px;max-width:400;">
 							<div class="card-image waves-effect waves-block waves-light" style = "background: black;">
 								<img class="activator" style = "opacity:0.9;" src="img/P1.png" width="300px" height="250px">
@@ -92,7 +93,7 @@
 					<div id="modal1" class="modal modal-fixed-footer black" tabindex="0" style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(0.8) scaleY(0.8);border-radius:10px;">
 						<div class="modal-content snow_again" style = "opacity:0.8;">
 							<h4 class = "center" >Kairali Handsanitizer</h4>
-							<table class = "" style = " border-spacing: 20px;border-collapse: separate;">
+							<table style = " border-spacing: 10px;border-collapse: separate;">
 								<tbody>
 									<tr> 
 										<th>Event Information:</th>
@@ -104,6 +105,73 @@
 						<div class="modal-footer snow_again" style = "opacity:0.8;">
 							<a class="modal-close waves-effect waves-green btn-flat"><b>Close</b></a>
 						</div>
+					</div>
+					
+					<!-- Product 2  -->
+					
+					<div class = "col s12" style = "display: flex;align-items: center;justify-content: center;">
+						<div class="card sticky-action grown_early z-depth-3 grey-text text-lighten-3" style = "border-radius:10px;max-width:400;">
+							<div class="card-image waves-effect waves-block waves-light" style = "background: black;">
+								<img class="activator" style = "opacity:0.9;" src="img/P2.png" width="300px" height="250px">
+							</div>
+							<div class="card-reveal grown_early" style = "overflow:hidden;">
+								<span class="card-title"><i class="material-icons right">close</i><br><small>Kairali Hand Sanitizer provides a convenient and effective way to clean your hands when soap and water are not available.</small></span>
+							</div>
+							<div class="card-action grown_early" style = "border-radius:10px;">
+									<span class="card-title activator grey-text text-lighten-3"><b>Kairali Handsanitizer</b><br></span>
+								<a class="waves-effect btn-flat modal-trigger" href = "#modal2">More Info</a>
+							</div>
+						</div>
+					</div>			
+					<div id="modal2" class="modal modal-fixed-footer black" tabindex="0" style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(0.8) scaleY(0.8);border-radius:10px;">
+						<div class="modal-content snow_again" style = "opacity:0.8;">
+							<h4 class = "center" >Kairali Handsanitizer</h4>
+							<table style = " border-spacing: 10px;border-collapse: separate;">
+								<tbody>
+									<tr> 
+										<th>Event Information:</th>
+										<td style = "padding: 10px;">{{eve.event_description|safe}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="modal-footer snow_again" style = "opacity:0.8;">
+							<a class="modal-close waves-effect waves-green btn-flat"><b>Close</b></a>
+						</div>
+					</div>
+					
+					<!-- Product 3  -->
+					
+					<div class = "col s12" style = "display: flex;align-items: center;justify-content: center;">
+						<div class="card sticky-action grown_early z-depth-3 grey-text text-lighten-3" style = "border-radius:10px;max-width:400;">
+							<div class="card-image waves-effect waves-block waves-light" style = "background: black;">
+								<img class="activator" style = "opacity:0.9;" src="img/P2.png" width="300px" height="250px">
+							</div>
+							<div class="card-reveal grown_early" style = "overflow:hidden;">
+								<span class="card-title"><i class="material-icons right">close</i><br><small>Kairali Hand Sanitizer provides a convenient and effective way to clean your hands when soap and water are not available.</small></span>
+							</div>
+							<div class="card-action grown_early" style = "border-radius:10px;">
+									<span class="card-title activator grey-text text-lighten-3"><b>Kairali Handsanitizer</b><br></span>
+								<a class="waves-effect btn-flat modal-trigger" href = "#modal3">More Info</a>
+							</div>
+						</div>
+					</div>			
+					<div id="modal3" class="modal modal-fixed-footer black" tabindex="0" style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(0.8) scaleY(0.8);border-radius:10px;">
+						<div class="modal-content snow_again" style = "opacity:0.8;">
+							<h4 class = "center" >Kairali Handsanitizer</h4>
+							<table style = " border-spacing: 10px;border-collapse: separate;">
+								<tbody>
+									<tr> 
+										<th>Event Information:</th>
+										<td style = "padding: 10px;">{{eve.event_description|safe}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="modal-footer snow_again" style = "opacity:0.8;">
+							<a class="modal-close waves-effect waves-green btn-flat"><b>Close</b></a>
+						</div>
+					</div>
 				<br>
 			</div>
 		</main>
