@@ -410,7 +410,12 @@
 		<script>
 			M.AutoInit();
 			$(document).ready(function(){
-				$('.modal').modal({preventScrolling:true,inDuration:10,outDuration:10});
+				if(window.innerWidth <= 800&&window.innerHeight <= 600){
+					$('.modal').modal({inDuration:10,outDuration:10});
+				}
+				else{
+					$('.modal').modal({inDuration:200,outDuration:200});
+				}				
 			});	
 		</script>
 
