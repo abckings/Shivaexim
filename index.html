@@ -7,7 +7,7 @@
 
 		<!-- CSS  -->
     <!-- Compiled and minified CSS -->
-		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.5.0.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 		<link rel="stylesheet" href="css/background.css">
 		<link rel="stylesheet" href="css/materialize.min.css">
@@ -96,7 +96,7 @@
 							</div>
 							<div class="card-action grown_early" style = "border-radius:10px;">
 									<span class="card-title activator grey-text text-lighten-3"><b>Kairali Hand Sanitizer</b><br><small>Available in Gel and Liquid form</small></span><br>
-								<a class="waves-effect btn-flat modal-trigger" href = "#modal1">More Info</a>
+								<a class="waves-effect btn-flat modal-trigger" href = "#modal1" onclick = "trig_Toast('Kairali%20Hand%20Sanitizer');">More Info</a>
 							</div>
 						</div>
 					</div>			
@@ -151,7 +151,7 @@
 							</div>
 							<div class="card-action grown_early" style = "border-radius:10px;">
 									<span class="card-title activator grey-text text-lighten-3"><b>Pulse Oximeter</b><br></span><br>
-								<a class="waves-effect btn-flat modal-trigger" href = "#modal2">More Info</a>
+								<a class="waves-effect btn-flat modal-trigger" href = "#modal2" onclick = "trig_Toast('Pulse%20Oxymeter');">More Info</a>
 							</div>
 						</div>
 					</div>			
@@ -207,7 +207,7 @@
 							</div>
 							<div class="card-action grown_early" style = "border-radius:10px;">
 									<span class="card-title activator grey-text text-lighten-3"><b>Wildcraft hypashield W95 Mask</b><br><small>Reusable Outdoor Mask</small></span><br>
-								<a class="waves-effect btn-flat modal-trigger" href = "#modal3">More Info</a>
+								<a class="waves-effect btn-flat modal-trigger" href = "#modal3" onclick = "trig_Toast('Wildcraft%20W95%20Mask');">More Info</a>
 							</div>
 						</div>
 					</div>			
@@ -260,7 +260,7 @@
 							</div>
 							<div class="card-action grown_early" style = "border-radius:10px;">
 									<span class="card-title activator grey-text text-lighten-3"><b>KN95 mask</b><br><small>Reusable Outdoor Mask</small></span><br>
-								<a class="waves-effect btn-flat modal-trigger" href = "#modal4">More Info</a>
+								<a class="waves-effect btn-flat modal-trigger" href = "#modal4" onclick = "trig_Toast('KN95%20Mask');">More Info</a>
 							</div>
 						</div>
 					</div>			
@@ -308,7 +308,7 @@
 							</div>
 							<div class="card-action grown_early" style = "border-radius:10px;">
 									<span class="card-title activator grey-text text-lighten-3"><b>Contactless Infrared Thermometer </b><br><small>Made in India</small></span><br>
-								<a class="waves-effect btn-flat modal-trigger" href = "#modal5">More Info</a>
+								<a class="waves-effect btn-flat modal-trigger" href = "#modal5" onclick = "trig_Toast('Contactless%20Infrared%20Thermometer%20Made%20In%20India');">More Info</a>
 							</div>
 						</div>
 					</div>			
@@ -352,7 +352,7 @@
 							</div>
 							<div class="card-action grown_early" style = "border-radius:10px;">
 									<span class="card-title activator grey-text text-lighten-3"><b>Contactless Infrared Thermometer </b><br><small>Hetaida Make</small></span><br>
-								<a class="waves-effect btn-flat modal-trigger" href = "#modal6">More Info</a>
+								<a class="waves-effect btn-flat modal-trigger" href = "#modal6" onclick = "trig_Toast('Contactless%20Infrared%20Thermometer%20Hetaida%20Make');">More Info</a>
 							</div>
 						</div>
 					</div>			
@@ -392,7 +392,7 @@
 					 <div class="col s6">
 						 <h5 class="white-text">Reach us at</h5>
 						 <div class = "row">
-							 <div class = "col l4 m5 s6"><a class="grey-text text-lighten-3" href="https://wa.me/917200853369">Whatsapp</a></div>
+							 <div class = "col l4 m5 s6"><a class="grey-text text-lighten-3" href="https://wa.me/917200853369" target='_blank'>Whatsapp</a></div>
 							 <div class = "col l4 m5 s6"><a class="grey-text text-lighten-3" href="tel:+917200853369">Mobile</a></div>
 							 <div class = "col l4 m5 s6"><a class="grey-text text-lighten-3" href="mailto:shivaeximtrading@gmail.com">Mail</a></div>
 						 </div>
@@ -419,6 +419,12 @@
 				var s = document.getElementsByTagName('script')[0];
 				s.parentNode.insertBefore(t, s);
 			})();
+		</script>
+		<script>
+		function trig_Toast(name){
+			M.toast({html: "<span>Bulk orders accepted</span><a class='btn-flat toast-action' href = 'https://wa.me/917200853369?text=Bulk%20order%20enquiry%20for%20"+name+"' target='_blank'>Contact</a>",classes: 'grown_early rounded z-density-1',style: 'z-index:1004'});
+			M.toast({html: "<span>Export orders accepted</span><a class='btn-flat toast-action' href = 'https://wa.me/917200853369?text=Export%20order%20enquiry%20for%20"+name+"' target='_blank'>Contact</a>",classes: 'grown_early rounded z-density-1',style: 'z-index:1004'});
+		}
 		</script>
 		<script>
 			M.AutoInit();
