@@ -206,7 +206,7 @@
 							</div>
 						</div>
 					</div>			
-					<div id="modal3" class="modal modal-fixed-footer black" tabindex="0" style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(2) scaleY(2);border-radius:10px;">
+					<div id="modal3" class="modal modal-fixed-footer black" tabindex="0" style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(0.8) scaleY(0.8);border-radius:10px;">
 						<div class="modal-content snow_again" style = "opacity:0.8;">
 							<h4 class = "center" >Wildcraft Hypashield W95 mask</h4>
 							<table class = "highlight">
@@ -409,6 +409,9 @@
 		</script>
 		<script>
 			M.AutoInit();
+			$(document).ready(function(){
+				$('.modal').modal({preventScrolling:true,inDuration:100,outDuration:100});
+			});	
 		</script>
 
 </body>
